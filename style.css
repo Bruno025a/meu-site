@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*  todos os elementos vão receber */
+}
+
+body {
+  /*
+  background-image: url(./assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size:  cover;
+  atalho
+*/
+
+  /*background: color image repeat position/size*/
+  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+#container {
+  width: 360px;
+  /*border: 1px solid red marcação;*/
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+/* tipo inline n aceita margin auto*/
+#profile {
+  text-align: center; /* inline, block usamos margin*/
+  padding: 24px;
+  margin-top: 8px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* lista links--1 tirar pontinhos da lista*/
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 8;
+}
+
+ul li a {
+  /*border: 1px solid red;marcação*/
+  display: flex; /* faz com que o a preencha todo o es dis*/
+  align-items: center; /* AMBOS CENTRALIZAM LINHA,V/H*/
+  justify-content: center; /* ou text-align: center*/
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;  /* fica mais suave*/
+}
+
+/*pseudp selector*/
+
+ul li a:hover{
+ background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(white); 
+
+
+}
+
+/*sociallinks*/
+#social-links{
+  display: flex;
+  justify-content: center;
+  
+  padding: 24px 8;
+  font-size: 24px;
+}
+
+#social-links a{  /* alinhamento*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: background 0.2s;
+   border-radius: 58%;
+}
+
+#social-links a:hover{    /*sobrepor*/
+  background: rgba(255, 255, 255, 0.2);
+ 
+  
+}
+
+footer{
+  padding: 24px 8;
+text-align: center;
+   
+}
